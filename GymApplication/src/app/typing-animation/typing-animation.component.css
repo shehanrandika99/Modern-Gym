@@ -1,0 +1,19 @@
+.typing-container h1 {
+    color: white;
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 24ch; /* Adjust the typing area width */
+  }
+  
+  .cursor {
+    display: inline-block;
+    animation: blink 0.5s step-end infinite alternate;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
