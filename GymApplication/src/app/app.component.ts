@@ -5,6 +5,8 @@ import { CommonModule } from '@angular/common';
 
 import { CrouselComponent } from './crousel/crousel.component';
 import {TrainersComponent} from './trainers/trainers.component';
+import { ProgramComponent } from './program/program.component';
+
 import {MatIconModule} from '@angular/material/icon'
 
 @Component({
@@ -13,8 +15,13 @@ import {MatIconModule} from '@angular/material/icon'
     RouterOutlet,
     NavBarComponent,
     CommonModule,
+    MatIconModule,
+    
     CrouselComponent,
-    MatIconModule
+    TrainersComponent,
+    ProgramComponent,
+   
+
     
   ],
   templateUrl: './app.component.html',
