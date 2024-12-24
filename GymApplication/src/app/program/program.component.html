@@ -1,25 +1,13 @@
-<div class="">
-    <div class="h-full flex flex-col md:flex-row">
-        <div class="w-full md:w-1/2 h-1/2 md:h-full p-4">
-            <div class="flex flex-row gap-4 mb-4">
-                <div class="w-1/2 p-2 bg-white shadow rounded">
-                    <p>Card 1 content</p>
-                </div>
-                <div class="w-1/2 p-2 bg-white shadow rounded">
-                    <p>Card 2 content</p>
-                </div>
-            </div>
-            <div class="flex flex-row gap-4">
-                <div class="w-1/2 p-2 bg-white shadow rounded">
-                    <p>Card 3 content</p>
-                </div>
-                <div class="w-1/2 p-2 bg-white shadow rounded">
-                    <p>Card 4 content</p>
-                </div>
-            </div>
-        </div>
-        <div class="w-full md:w-1/2 h-1/2 md:h-full p-4">
-            <img src='images/background2.png' alt="program image" class="object-cover" />
-        </div>
+<div class="mx-12 flex flex-col md:flex-row">
+  <div class="grid grid-cols-0 md:grid-cols-2 gap-x-4 gap-y-2 md:w-1/2">
+    <div *ngFor="let card of cards" class="flex items-center">
+      <app-program-card [title]="card.title" [description]="card.description" [image]="card.image">
+      </app-program-card>
     </div>
+  </div>
+  <!-- Background Image -->
+
+</div>
+<div class="w-full md:w-1/2 h-1/2 md:h-full p-4">
+  <img src="images/background2.png" alt="Program image" class="" />
 </div>
