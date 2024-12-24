@@ -1,0 +1,25 @@
+<!-- Card -->
+<div class="mx-auto bg-[#42414158] shadow-lg rounded-lg">
+    <div class="px-6 py-5">
+        <img [src]="image" alt="card image" class="w-10 h-10 rounded-full p-2" />
+        <div class="flex items-start">
+            <div class="flex-grow truncate">
+                <!-- Card header -->
+                <div class="w-full sm:flex justify-between items-center mb-3">
+                    <!-- Title -->
+                    <h2 class="text-2xl leading-snug font-extrabold text-gray-50 truncate mb-1 sm:mb-0">{{title}}</h2>
+                    <!-- Like and comment buttons -->
+
+                </div>
+                <!-- Card body -->
+                <div class="flex items-end justify-between whitespace-normal">
+                    <!-- Paragraph -->
+                    <div class="max-w-md text-[#8c8a8a]">
+                        <p class="mb-2 text-justify">{{description}}</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
